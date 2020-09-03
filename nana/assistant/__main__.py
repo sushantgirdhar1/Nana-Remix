@@ -24,7 +24,7 @@ async def un_auth(_client, message):
         msg = f"""
 Hi {message.chat.first_name},
 You must be looking forward on how I work.
-In that case I can give you helpful links to self host me on your own.
+In that case I can't help it , this bot is private for my master .
 Here are some links for you
         """
         buttons = [
