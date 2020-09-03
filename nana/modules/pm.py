@@ -88,19 +88,19 @@ async def pm_button(client, query):
         set_req(query.from_user.id, True)
     elif re.match("engine_pm_report", query.data):
         await setbot.edit_inline_text(query.inline_message_id, "👍")
-        await app.send_message(query.from_user.id, "Hello, if you want to report any bugs, please vist in @NanaBotSupport")
+        await app.send_message(query.from_user.id, "Hello, if you want to report any bugs in the userbot , please vist in @ebruiser")
     elif re.match("engine_pm_none", query.data):
         await setbot.edit_inline_text(query.inline_message_id, "👍")
         await app.send_message(query.from_user.id, "Alright then,\nIf you want anything from me, please contact my again. Thank you")
     elif re.match("engine_pm_apr", query.data):
         target = query.data.split("-")[1]
         await query.message.edit_text(f"[Approved for PM]({target})")
-        await app.send_message(target, "Hello, this is **Nana**, my master approved you to PM.")
+        await app.send_message(target, "Hello, this is **ebruiser**, my master approved you to PM.")
         set_whitelist(int(target), True)
     elif re.match(r"engine_pm_blk", query.data):
         target = query.data.split("-")[1]
         await query.message.edit_text("That user was blocked ~")
-        await app.send_message(target, "Hello, this is **Nana**, my master has decide to block you.\nSorry for this!")
+        await app.send_message(target, "Hello, this is **ebruiser** , my master has decide to block you.\nSorry for this!")
         await app.block_user(target)
     else:
         await setbot.edit_inline_text(query.inline_message_id, "🙆‍")
