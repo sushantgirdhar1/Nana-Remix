@@ -30,14 +30,14 @@ Here are some links for you
         buttons = [
             [
                 InlineKeyboardButton(
-                    "Documentation", url="https://aman-a.gitbook.io/nana-remix/"
+                    "Owner Information", url="https://sushantgirdhar.github.io"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    "Repository", url="https://github.com/pokurt/Nana-Remix"
+                    "Ebruiser", url="https://t.me/ebruiser"
                 ),
-                InlineKeyboardButton("Support", url="https://t.me/nanabotsupport"),
+                InlineKeyboardButton("Sushant", url="https://t.me/sushantgirdhar"),
             ],
         ]
         await message.reply(msg, reply_markup=InlineKeyboardMarkup(buttons))
